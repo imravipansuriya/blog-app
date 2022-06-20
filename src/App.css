@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+
+.blog-wrp {
+  position: relative;
+  padding: 50px 0;
+}
+
+.blog-wrp .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.blog-main {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blog-main .blog-box {
+  width: 43.33%;
+  flex: 0 0 43.33%;
+  padding: 0;
+  box-shadow: 0 0px 14px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+.blog-main .blog-box .blog-box-img {
+  position: relative;
+  padding-top: 50%;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-main .blog-box .blog-box-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-main .blog-box .blog-box-desc {
+  background: #fff;
+  text-align: left;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.blog-main .blog-box .blog-box-desc .dots-wrp span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 100px;
+  background: #000;
+  margin-right: 10px;
+}
+
+.blog-main .blog-box .blog-box-desc .dots-wrp {
+  display: flex;
+  align-items: center;
+}
+
+.blog-main .blog-box .blog-box-desc .dots-wrp .blue-dots {
+  background: #52bcd5;
+}
+
+.blog-main .blog-box .blog-box-desc .dots-wrp .yallow-dots {
+  background: #f5c10b;
+}
+
+.blog-main .blog-box .blog-box-desc h2 {
+  text-transform: capitalize;
+}
+
+.blog-main .blog-box .blog-box-desc .blog-box-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-main .blog-box .blog-box-desc .blog-box-widget span {
+  color: #a5afb8;
+  font-weight: 600;
+}
+
+.blog-main .blog-box .blog-box-desc p {color: #a5afb8;font-weight: 400;margin: 0;padding: 10px 0 30px 0;}
+ 
+ 
+ 
+.blog-box-img .img-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000094;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.blog-box-img:hover .img-hover{
+  opacity: 1;
+ }
