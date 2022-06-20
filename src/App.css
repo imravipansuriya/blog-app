@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -63,6 +64,7 @@
   box-shadow: 0 0px 14px rgb(0 0 0 / 25%);
   border-radius: 10px;
 }
+
 .blog-main .blog-box .blog-box-img {
   position: relative;
   padding-top: 50%;
@@ -125,10 +127,15 @@
   font-weight: 600;
 }
 
-.blog-main .blog-box .blog-box-desc p {color: #a5afb8;font-weight: 400;margin: 0;padding: 10px 0 30px 0;}
- 
- 
- 
+.blog-main .blog-box .blog-box-desc p {
+  color: #a5afb8;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0 30px 0;
+}
+
+
+
 .blog-box-img .img-hover {
   z-index: 1;
   position: absolute;
@@ -147,6 +154,122 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.blog-box-img:hover .img-hover{
+
+.blog-box-img:hover .img-hover {
   opacity: 1;
- }
+}
+
+.model {
+  height: 300px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.model-overlay {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.356);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.model img {
+  width: 100%;
+}
+
+span.close-icon {
+  display: block;
+  text-align: right;
+  margin: 10px;
+  color: #d2d7db;
+  font-weight: 800;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.model-image {
+  line-height: 0;
+}
+
+.model-image img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.model-detail {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.model-title {
+  font-size: 18px;
+  text-align: left;
+}
+
+.model-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+p.text-detail {
+  text-align: left;
+  color: #a5afb8;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0 30px 0;
+}
+
+span.avatar {
+  height: 60px;
+  width: 60px;
+  display: block;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.author-name {
+  color: #a5afb8;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  }
+
+@media (max-width: 767px) {  
+  .blog-wrp .container{
+    padding: 0;
+  }
+  .blog-main{
+    gap: 50px 15px;
+  }
+}
+
+@media (max-width: 575px) {  
+  .blog-main .blog-box{
+    width: 90%;
+    flex: 0 0 90%;
+  }
+  .model{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 375px){
+  .model {
+    max-width: 300px;
+}
+}
